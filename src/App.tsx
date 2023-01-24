@@ -2,7 +2,7 @@ import "./App.css";
 
 import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { InitPage, Layout, ZipCode } from "./pages";
+import { InitPage, Layout, ZipCode, Binding } from "./pages";
 import { AppDispatch, useSelector } from "./redux/store";
 import { useDispatch } from "react-redux";
 import "animate.css";
@@ -14,6 +14,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path='init' element={<InitPage />} />
         <Route path='zip_code' element={<ZipCode />} />
+        <Route path='binding' element={<Binding />} />
         <Route path='*' element={<Navigate to='/init' />} />
       </Route>
     </Routes>

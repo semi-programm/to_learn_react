@@ -17,7 +17,10 @@ let Header = () => {
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to={"zip_code"}>
-              <Nav.Link>作成したページ</Nav.Link>
+              <Nav.Link>郵便番号</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"binding"}>
+              <Nav.Link>bindingのサンプル</Nav.Link>
             </LinkContainer>
             <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
               <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
